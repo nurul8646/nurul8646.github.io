@@ -1,0 +1,22 @@
+name: Publish scheduled articles
+
+# Rebuilds the site every day at 9:05 AM Bangladesh time (03:05 UTC),
+# so articles dated for today appear automatically.
+on:
+  schedule:
+    - cron: "5 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  pages: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ask GitHub Pages to rebuild the site
+        run: |
+          curl -fsS -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds"
