@@ -1,0 +1,39 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+description: Contact Nurul Islam by phone, WhatsApp, email or LinkedIn.
+---
+<header class="page-head">
+  <p class="eyebrow">Contact</p>
+  <h1>Get in touch</h1>
+  <p class="lead">For work, accounting and tax questions, or about anything I have written here. Email or WhatsApp is the quickest way to reach me.</p>
+</header>
+
+<section class="contact-grid">
+  <a class="c-card" href="tel:{{ site.phone }}">
+    <span class="k">Mobile</span>
+    <span class="v mono">{{ site.phone_display }}</span>
+    <span class="h">Call</span>
+  </a>
+  <a class="c-card" href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">
+    <span class="k">WhatsApp</span>
+    <span class="v mono">{{ site.phone_display }}</span>
+    <span class="h">Send a message</span>
+  </a>
+  <a class="c-card" href="mailto:{{ site.email }}">
+    <span class="k">Email</span>
+    <span class="v">{{ site.email }}</span>
+    <span class="h">Write an email</span>
+  </a>
+  <a class="c-card" href="https://www.linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener">
+    <span class="k">LinkedIn</span>
+    <span class="v">linkedin.com/in/{{ site.linkedin }}</span>
+    <span class="h">View profile</span>
+  </a>
+</section>
+
+<section class="block">
+  <h2>Location</h2>
+  <div><p class="lead" style="margin:0">{{ site.location }}, Bangladesh</p></div>
+</section>

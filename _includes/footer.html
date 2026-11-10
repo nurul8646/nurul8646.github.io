@@ -1,0 +1,15 @@
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div>
+      <strong>{{ site.title }}</strong>
+      <p>{{ site.tagline }}<br>{{ site.location }}</p>
+    </div>
+    <div class="foot-links">
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a href="https://www.linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </div>
+  </div>
+  <p class="copy">© {{ 'now' | date: '%Y' }} {{ site.author }}</p>
+</footer>

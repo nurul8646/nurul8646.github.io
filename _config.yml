@@ -1,0 +1,34 @@
+# ------------------------------------------------------------
+# Site settings — edit these values to change details site-wide
+# ------------------------------------------------------------
+title: Nurul Islam
+tagline: Accounts & Finance professional · Income Tax Practitioner
+description: >-
+  Nurul Islam is an accountant in Dhaka with 5.5+ years of experience in
+  financial reporting, tax and VAT compliance, audit coordination and
+  finance team leadership.
+author: Nurul Islam
+lang: en
+
+# Contact details (shown in the header, footer and Contact page)
+phone_display: "+880 1849-670713"
+phone: "+8801849670713"
+whatsapp: "8801849670713"
+email: nurul8646@gmail.com
+linkedin: nurul8646
+location: Merul Badda, Dhaka 1212
+
+# Leave url/baseurl empty if your repository is named  <username>.github.io
+url: ""
+baseurl: ""
+
+permalink: /articles/:year/:title/
+timezone: Asia/Dhaka
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - HOW-TO-WRITE-AN-ARTICLE.md

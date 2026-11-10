@@ -1,0 +1,14 @@
+<header class="site-head">
+  <div class="head-inner">
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="mark">NI</span><span>Nurul Islam</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+    <label for="nav-toggle" class="nav-btn" aria-hidden="true"><span></span><span></span><span></span></label>
+    <nav class="nav">
+      {% assign u = page.url %}
+      <a href="{{ '/' | relative_url }}" {% if u == '/' %}aria-current="page"{% endif %}>Home</a>
+      <a href="{{ '/about/' | relative_url }}" {% if u contains '/about' %}aria-current="page"{% endif %}>About</a>
+      <a href="{{ '/articles/' | relative_url }}" {% if u contains '/articles' %}aria-current="page"{% endif %}>Articles</a>
+      <a href="{{ '/contact/' | relative_url }}" {% if u contains '/contact' %}aria-current="page"{% endif %}>Contact</a>
+    </nav>
+  </div>
+</header>

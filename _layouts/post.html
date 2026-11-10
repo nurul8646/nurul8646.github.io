@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="post">
+  <a class="back" href="{{ '/articles/' | relative_url }}">← All articles</a>
+  <header class="post-head">
+    <p class="eyebrow">{{ page.date | date: "%d %B %Y" }}{% if page.category %} · {{ page.category }}{% endif %} · {{ content | number_of_words | divided_by: 200 | plus: 1 }} min read</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+  <footer class="post-foot">
+    <img src="{{ '/assets/img/nurul.jpg' | relative_url }}" alt="Nurul Islam" class="avatar">
+    <div>
+      <strong>Written by Nurul Islam</strong>
+      <p>Assistant Manager (Accounts &amp; Finance) at As Sunnah Foundation. <a href="{{ '/contact/' | relative_url }}">Get in touch</a></p>
+    </div>
+  </footer>
+</article>
