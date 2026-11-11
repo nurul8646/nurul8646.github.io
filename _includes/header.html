@@ -7,6 +7,7 @@
       {% assign u = page.url %}
       <a href="{{ '/' | relative_url }}" {% if u == '/' %}aria-current="page"{% endif %}>Home</a>
       <a href="{{ '/about/' | relative_url }}" {% if u contains '/about' %}aria-current="page"{% endif %}>About</a>
+      <a href="{{ '/services/' | relative_url }}" {% if u contains '/services' %}aria-current="page"{% endif %}>Services</a>
       <a href="{{ '/articles/' | relative_url }}" {% if u contains '/articles' %}aria-current="page"{% endif %}>Articles</a>
       <a href="{{ '/contact/' | relative_url }}" {% if u contains '/contact' %}aria-current="page"{% endif %}>Contact</a>
     </nav>
